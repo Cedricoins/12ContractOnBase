@@ -1,4 +1,4 @@
-import ContractCard from "./components/ContractCard";
+import ContractCard from "./ContractCard";
 import { CONTRACT_ADDRESSES } from "./addresses";
 import ABI from "./abi.json";
 
@@ -48,4 +48,5 @@ function App() {
 }
 
 export default App;
+
 
