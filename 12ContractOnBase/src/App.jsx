@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-900 p-6">
       <h1 className="text-3xl font-bold text-center text-white mb-6">
-        🔗 Appels des 10 Contrats sur Base Mainnet
+        🔗 Appels des 12 Contrats sur Base Mainnet
       </h1>
       <div className="flex justify-center mb-8">
         <button
