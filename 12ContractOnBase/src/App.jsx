@@ -1,5 +1,5 @@
 import { CONTRACT_ADDRESSES } from "./contracts/addresses";
-import ContractCard from "./components/ContractCard";
+import ContractCard from "./components/ContractCard.jsx";
 import ABI from "./contracts/abi.json";
 
 function App() {
