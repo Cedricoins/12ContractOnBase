@@ -1,0 +1,14 @@
+
+{
+  "Incrementeur": [
+    { "inputs": [], "name": "valeur", "outputs": [{ "type": "int256" }], "stateMutability": "view", "type": "function" },
+    { "inputs": [], "name": "incrementer", "outputs": [], "stateMutability": "nonpayable", "type": "function" }
+  ],
+  "Decrementeur": [
+    { "inputs": [], "name": "valeur", "outputs": [{ "type": "int256" }], "stateMutability": "view", "type": "function" },
+    { "inputs": [], "name": "decrementer", "outputs": [], "stateMutability": "nonpayable", "type": "function" }
+  ],
+  "Dire": [
+    { "inputs": [], "name": "dire", "outputs": [{ "type": "string" }], "stateMutability": "pure", "type": "function" }
+  ]
+}
