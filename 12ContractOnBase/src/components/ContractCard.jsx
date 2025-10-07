@@ -31,8 +31,15 @@ export default function ContractCard({ name, address, abi, actionType }) {
         const newVal = await contract.valeur();
         setValue(newVal.toString());
       } else {
+        // 🔥 Envoi d'une transaction "dire()"
+        const tx = await contract.connect(signer).dire();
+        await tx.wait();
+
+        // On lit ensuite le message retourné (hors transaction)
         const msg = await contract.dire();
         setValue(msg);
+
+        alert(`Transaction envoyée ✅\nHash: ${tx.hash}`);
       }
     } catch (err) {
       console.error(err);
