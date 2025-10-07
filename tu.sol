@@ -1,8 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
-/// Contrat 6 : dire "TU"
-contract TUContract {
-    function dire() public pure returns (string memory) {
-        return "TU";
+
+contract TuContract {
+    event MessageEnvoye(address indexed expediteur, string message);
+
+    function dire() public returns (string memory) {
+        emit MessageEnvoye(msg.sender, "tu");
+        return "tu";
     }
 }
