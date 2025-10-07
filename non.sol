@@ -1,8 +1,11 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
-/// Contrat 10 : dire "non"
+
 contract NonContract {
-    function dire() public pure returns (string memory) {
+    event MessageEnvoye(address indexed expediteur, string message);
+
+    function dire() public returns (string memory) {
+        emit MessageEnvoye(msg.sender, "non");
         return "non";
     }
 }
