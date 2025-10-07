@@ -32,7 +32,7 @@ export default function ContractCard({ name, address, abi, actionType }) {
         setValue(newVal.toString());
       } else {
         // 🔥 Envoi d'une transaction "dire()"
-        const tx = await contract.connect(signer).dire();
+        const tx = await contract.connect(await provider.getSigner()).dire();
         await tx.wait();
 
         // On lit ensuite le message retourné (hors transaction)
