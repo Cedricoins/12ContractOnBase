@@ -13,7 +13,9 @@ function App() {
     { name: "Va", abi: ABI.Dire, address: CONTRACT_ADDRESSES.VaContract },
     { name: "Bien", abi: ABI.Dire, address: CONTRACT_ADDRESSES.BienContract },
     { name: "Oui", abi: ABI.Dire, address: CONTRACT_ADDRESSES.OuiContract },
-    { name: "Non", abi: ABI.Dire, address: CONTRACT_ADDRESSES.NonContract }
+    { name: "Non", abi: ABI.Dire, address: CONTRACT_ADDRESSES.NonContract },
+    { name: "Merci", abi: ABI.Dire, address: CONTRACT_ADDRESSES.MerciContract },
+    { name: "PasMerci", abi: ABI.Dire, address: CONTRACT_ADDRESSES.PasMerciContract }
   ];
 
   async function connectWallet() {
