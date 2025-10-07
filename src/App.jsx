@@ -1,6 +1,6 @@
-import ContractCard from "./ContractCard";
-import { CONTRACT_ADDRESSES } from "./addresses";
-import ABI from "./abi.json";
+import ContractCard from "./components/ContractCard";
+import { CONTRACT_ADDRESSES } from "./contracts/addresses";
+import ABI from "./contracts/abi.json";
 
 function App() {
   const cards = [
@@ -48,5 +48,6 @@ function App() {
 }
 
 export default App;
+
 
 
